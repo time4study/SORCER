@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>950</x><y>560</y><w>60</w><h>120</h></coordinates><panel_attributes>Admin
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>570</x><y>580</y><w>60</w><h>110</h></coordinates><panel_attributes>Editor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>230</x><y>570</y><w>60</w><h>120</h></coordinates><panel_attributes>Drinker
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>60</y><w>900</w><h>480</h></coordinates><panel_attributes>Next generation of coffee maker</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>200</x><y>420</y><w>120</w><h>40</h></coordinates><panel_attributes>Purchase beverage
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>360</x><y>420</y><w>120</w><h>40</h></coordinates><panel_attributes>Add recipe
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>520</x><y>420</y><w>120</w><h>40</h></coordinates><panel_attributes>Delete recipe
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>670</x><y>420</y><w>120</w><h>40</h></coordinates><panel_attributes>Edit recipe
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>820</x><y>420</y><w>120</w><h>40</h></coordinates><panel_attributes>Add inventory
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>450</y><w>110</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;90;110</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>450</y><w>140</w><h>160</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;120;140</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>450</y><w>160</w><h>160</h></coordinates><panel_attributes></panel_attributes><additional_attributes>140;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>450</y><w>40</w><h>140</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;20;120</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>450</y><w>30</w><h>140</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>200</x><y>210</y><w>120</w><h>40</h></coordinates><panel_attributes>Check inventory
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>410</x><y>300</y><w>140</w><h>40</h></coordinates><panel_attributes>Check money change
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>650</x><y>230</y><w>140</w><h>40</h></coordinates><panel_attributes>Waiting state</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>240</y><w>80</w><h>200</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;10;20;180</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>320</y><w>200</w><h>120</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>180;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>220</y><w>350</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;10;330;30</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>240</y><w>130</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;70;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>240</y><w>100</w><h>200</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;180;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>240</y><w>200</w><h>200</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;180;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>260</y><w>90</w><h>180</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>40;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>260</y><w>150</w><h>180</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>130;160;10;10</additional_attributes></element></diagram>
