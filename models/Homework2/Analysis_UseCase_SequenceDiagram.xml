@@ -1,0 +1,41 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLFrame</id><coordinates><x>130</x><y>30</y><w>680</w><h>690</h></coordinates><panel_attributes>next generation of coffee maker</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>150</x><y>80</y><w>60</w><h>120</h></coordinates><panel_attributes>Drinker
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>150</y><w>30</w><h>590</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;570</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>170</x><y>200</y><w>20</w><h>510</h></coordinates><panel_attributes>
+bg=yellow
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>190</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+add money</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>360</x><y>100</y><w>100</w><h>30</h></coordinates><panel_attributes>CoffeeMaker
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>120</y><w>30</w><h>580</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;560;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>530</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+return coffee, change</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>410</x><y>270</y><w>20</w><h>100</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>310</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>230</x><y>330</y><w>130</w><h>40</h></coordinates><panel_attributes>Check money change
+valign=center</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>380</x><y>400</y><w>330</w><h>270</h></coordinates><panel_attributes>IF-ELSE BLOCK
+--
+IF checkMoneyChange() == true
+symbol=usecase
+
+
+
+
+
+
+
+
+--
+ELSE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>240</y><w>230</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-
+checkMoneyChange();</panel_attributes><additional_attributes>10;150;90;150;90;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>410</x><y>270</y><w>20</w><h>100</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>410</x><y>460</y><w>20</w><h>50</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>440</y><w>180</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-
+makeCoffee();</panel_attributes><additional_attributes>10;80;90;80;90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>610</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+return money</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>220</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+select coffee</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element></diagram>
