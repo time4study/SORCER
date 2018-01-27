@@ -13,8 +13,8 @@ import org.sorcer.test.SorcerTestRunner;
 import sorcer.service.ContextException;
 import sorcer.service.Exertion;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.Matchers.lessThanOrEqualTo;
+import static org.junit.Assert.*;
 import static sorcer.eo.operator.*;
 import static sorcer.so.operator.eval;
 
@@ -87,6 +87,10 @@ public class CoffeeMakerTest {
 	public void addRecepie() throws Exception {
 		coffeeMaker.addRecipe(mocha);
 		assertEquals(coffeeMaker.getRecipeForName("mocha").getName(), "mocha");
+		assertTrue(coffeeMaker.getRecipeFull()[0]);
+		assertFalse(coffeeMaker.getRecipeFull()[1]);
+		assertFalse(coffeeMaker.getRecipeFull()[2]);
+		assertFalse(coffeeMaker.getRecipeFull()[3]);
 	}
 
 	@Test
@@ -118,9 +122,52 @@ public class CoffeeMakerTest {
 
 	@Test
 	public void makeCoffee() throws Exception {
+		int coffee = inventory.getCoffee();
+		int milk = inventory.getMilk();
+		int sugar = inventory.getSugar();
+		int chocolate = inventory.getChocolate();
 		coffeeMaker.addRecipe(espresso);
 		assertEquals(coffeeMaker.makeCoffee(espresso, 200), 150);
+		assertThat(inventory.getChocolate(), lessThanOrEqualTo(chocolate));
+		assertThat(inventory.getSugar(), lessThanOrEqualTo(sugar));
+		assertThat(inventory.getMilk(), lessThanOrEqualTo(milk));
+		assertThat(inventory.getCoffee(), lessThanOrEqualTo(coffee));
 	}
 
+	@Test
+	public void editRecipe() {
+		Recipe newRecipe = createDefaultRecipe();
+		coffeeMaker.addRecipe(espresso);
+		coffeeMaker.editRecipe(espresso, newRecipe);
+		assertEquals(coffeeMaker.getRecipeForName(newRecipe.getName()).getName(), newRecipe.getName());
+	}
+
+	@Test
+	public void deleteRecipe() throws Exception {
+		coffeeMaker.addRecipe(espresso);
+		coffeeMaker.deleteRecipe(espresso);
+		assertEquals(coffeeMaker.getRecipeForName("espresso"), null);
+	}
+
+	@Test
+	public void addInventory() throws Exception {
+		assertTrue(coffeeMaker.addInventory(10,20,5,0));
+	}
+
+	@Test
+	public void checkInventory() {
+		assertNotNull(coffeeMaker.checkInventory());
+	}
+
+	private Recipe createDefaultRecipe(){
+		Recipe recipe = new Recipe();
+		recipe.setName("COOL RECIPE");
+		recipe.setPrice(1000000);
+		recipe.setAmtSugar(100);
+		recipe.setAmtMilk(100);
+		recipe.setAmtChocolate(100);
+		recipe.setAmtCoffee(100);
+		return recipe;
+	}
 }
 
