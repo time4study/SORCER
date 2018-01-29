@@ -1,0 +1,32 @@
+1. addRecipe in line 67:
+   ->	break;
+	  instead of
+   ->	canAddRecipe = false;
+	  because we need to add a recipe to the first empty spot, not to the last
+	  previously we've found an empty recipe and continue to look for the next empty recipe
+	  now we wiil find an empty recipe and stop searching
+
+2. deleteRecipe in line 92:
+   ->	recipeArray[i] = new Recipe();
+   ->	recipeFull[i] = false;
+	  instead of 
+   ->	recipeArray[i] = recipeArray[i];
+	  because we need to delete a recipe and marked it as empty(not full)
+
+3. editRecipe in line 126:
+   ->	if(oldRecipe.equals(recipeArray[i]))
+	  instead of
+   ->	if(newRecipe.equals(recipeArray[i]))
+	  because we need to find the recipe that equals the recipe(oldRecipe) we want to edit
+
+4. addInventory in line 150:
+   ->	if(amtCoffee < 0 || amtMilk < 0 || amtSugar < 0 || amtChocolate < 0)
+	  instead of
+   ->	if(amtCoffee < 0 || amtMilk < 0 || amtSugar > 0 || amtChocolate < 0)
+	  because we need to check if the amount of sugar that we put in coffeMaker is greater than 0
+
+5. makeCoffee in line 186:
+   ->	inventory.setCoffee(inventory.getCoffee() - r.getAmtCoffee());
+	  instead of
+   ->	inventory.setCoffee(inventory.getCoffee() + r.getAmtCoffee());
+	  because when we make a coffee the amount of coffee should become lesser than before 
